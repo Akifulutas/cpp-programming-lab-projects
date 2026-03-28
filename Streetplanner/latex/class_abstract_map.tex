@@ -1,0 +1,38 @@
+\doxysection{Abstract\+Map Class Reference}
+\hypertarget{class_abstract_map}{}\label{class_abstract_map}\index{AbstractMap@{AbstractMap}}
+Inheritance diagram for Abstract\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_abstract_map}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_abstract_map_ab2fbb46108e2905fb1193a67510d41f0}\label{class_abstract_map_ab2fbb46108e2905fb1193a67510d41f0} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Abstract\+Map} ()
+\begin{DoxyCompactList}\small\item\em Virtual Destructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_abstract_map_a9938512c5ef94370786a3d1a72aa7e37}\label{class_abstract_map_a9938512c5ef94370786a3d1a72aa7e37} 
+virtual void {\bfseries add\+City} (\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*})=0
+\item 
+\Hypertarget{class_abstract_map_a179d25c28087d9090314caff024b1f46}\label{class_abstract_map_a179d25c28087d9090314caff024b1f46} 
+virtual bool {\bfseries add\+Street} (\mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*})=0
+\item 
+\Hypertarget{class_abstract_map_a09ddd4db3021602aa2c0ca343a8dd3a2}\label{class_abstract_map_a09ddd4db3021602aa2c0ca343a8dd3a2} 
+virtual \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} {\bfseries find\+City} (const QString city\+Name) const =0
+\item 
+\Hypertarget{class_abstract_map_add9d35daea37d6e08391be612e7038e3}\label{class_abstract_map_add9d35daea37d6e08391be612e7038e3} 
+virtual QVector$<$ \mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Street\+List} (const \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}city) const =0
+\item 
+\Hypertarget{class_abstract_map_a621f60a374d486d6cebbfc1d038cfc64}\label{class_abstract_map_a621f60a374d486d6cebbfc1d038cfc64} 
+virtual \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} {\bfseries get\+Opposite\+City} (const \mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*}street, const \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}city) const =0
+\item 
+\Hypertarget{class_abstract_map_a4457b31b90038c291b84675941400238}\label{class_abstract_map_a4457b31b90038c291b84675941400238} 
+virtual double {\bfseries get\+Length} (const \mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*}street) const =0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+abstractmap.\+h\item 
+abstractmap.\+cpp\end{DoxyCompactItemize}

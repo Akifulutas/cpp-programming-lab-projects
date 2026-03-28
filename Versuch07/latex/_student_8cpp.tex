@@ -1,0 +1,47 @@
+\doxysection{Student.\+cpp File Reference}
+\hypertarget{_student_8cpp}{}\label{_student_8cpp}\index{Student.cpp@{Student.cpp}}
+
+
+Implementierung der Student-\/\+Klasse.  
+
+
+{\ttfamily \#include "{}Student.\+h"{}}\newline
+{\ttfamily \#include $<$ostream$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{_student_8cpp_ae6a9c8e53ca63d5c0efd1f8727c6800f}{operator$<$$<$}} (std\+::ostream \&out, const \mbox{\hyperlink{class_student}{Student}} \&s)
+\begin{DoxyCompactList}\small\item\em Überlädt \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} für die einfache Ausgabe von Studenten (z.\+B. {\ttfamily std\+::cout \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} s}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementierung der Student-\/\+Klasse. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{_student_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_student_8cpp_ae6a9c8e53ca63d5c0efd1f8727c6800f}\index{Student.cpp@{Student.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Student.cpp@{Student.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{_student_8cpp_ae6a9c8e53ca63d5c0efd1f8727c6800f} 
+std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{, }\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Überlädt \textquotesingle{}\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} für die einfache Ausgabe von Studenten (z.\+B. {\ttfamily std\+::cout \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} s}). 
+
+Globale Überladung von operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} für einfache Ausgabe (z.\+B. {\ttfamily cout \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} student}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Ausgabestrom \\
+\hline
+{\em s} & \doxylink{class_student}{Student}, der ausgegeben wird \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referenz auf den Stream, um Verkettung zu erlauben. 
+\end{DoxyReturn}
+Nutzt die \textquotesingle{}ausgabe\textquotesingle{}-\/Methode für die eigentliche Formatierung.

@@ -1,0 +1,82 @@
+\doxysection{City Class Reference}
+\hypertarget{class_city}{}\label{class_city}\index{City@{City}}
+
+
+Repräsentiert eine einzelne Stadt mit Namen und 2D-\/\+Koordinaten. Dies ist eine grundlegende Datenklasse für unsere Karte.  
+
+
+
+
+{\ttfamily \#include $<$city.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_city_a9e29f32d33f56bdf59cba425a7e08bd8}{City}} (QString name, int x, int y)
+\begin{DoxyCompactList}\small\item\em Konstruktor der City-\/\+Klasse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_city_a3d22cac343c40bf53d6bc8d831ac4262}{draw}} (QGraphics\+Scene \&scene)
+\begin{DoxyCompactList}\small\item\em Zeichnet die Stadt auf der Grafikooberfläche. \end{DoxyCompactList}\item 
+\Hypertarget{class_city_ad73598d937870a165cb530958106ff07}\label{class_city_ad73598d937870a165cb530958106ff07} 
+QString {\bfseries get\+Name} () const
+\item 
+\Hypertarget{class_city_af515909e9e733566a5005fdc732f608e}\label{class_city_af515909e9e733566a5005fdc732f608e} 
+int {\bfseries getX} () const
+\item 
+\Hypertarget{class_city_a9e787273ca3421eb6ed3ce9c556359d0}\label{class_city_a9e787273ca3421eb6ed3ce9c556359d0} 
+int {\bfseries getY} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repräsentiert eine einzelne Stadt mit Namen und 2D-\/\+Koordinaten. Dies ist eine grundlegende Datenklasse für unsere Karte. 
+
+\label{doc-constructors}
+\Hypertarget{class_city_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_city_a9e29f32d33f56bdf59cba425a7e08bd8}\index{City@{City}!City@{City}}
+\index{City@{City}!City@{City}}
+\doxysubsubsection{\texorpdfstring{City()}{City()}}
+{\footnotesize\ttfamily \label{class_city_a9e29f32d33f56bdf59cba425a7e08bd8} 
+City\+::\+City (\begin{DoxyParamCaption}\item[{QString}]{name}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor der City-\/\+Klasse. 
+
+Nutzt eine Initialisierungsliste (der Teil nach dem Doppelpunkt "{}\+:"{}). Dies ist die moderne und effiziente C++ Methode, um Member-\/\+Variablen ihre Anfangswerte zuzuweisen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name der Stadt. \\
+\hline
+{\em x} & x-\/\+Koordinate. \\
+\hline
+{\em y} & y-\/\+Koordinate. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_city_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_city_a3d22cac343c40bf53d6bc8d831ac4262}\index{City@{City}!draw@{draw}}
+\index{draw@{draw}!City@{City}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_city_a3d22cac343c40bf53d6bc8d831ac4262} 
+void City\+::draw (\begin{DoxyParamCaption}\item[{QGraphics\+Scene \&}]{scene}{}\end{DoxyParamCaption})}
+
+
+
+Zeichnet die Stadt auf der Grafikooberfläche. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & Die Szene, auf der gezeichnet werden soll. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+city.\+h\item 
+city.\+cpp\end{DoxyCompactItemize}

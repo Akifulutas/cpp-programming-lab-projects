@@ -1,0 +1,105 @@
+\doxysection{Map Class Reference}
+\hypertarget{class_map}{}\label{class_map}\index{Map@{Map}}
+Inheritance diagram for Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_map}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_map_ab70669beead9e729b7c5bae351b33236}{add\+City}} (\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}city) override
+\item 
+bool \mbox{\hyperlink{class_map_a61d294ea5825c8fb5bc4096e9cec2667}{add\+Street}} (\mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*}street) override
+\item 
+\Hypertarget{class_map_af7386ac56bf2ff2d5598ae6e08dc8193}\label{class_map_af7386ac56bf2ff2d5598ae6e08dc8193} 
+void {\bfseries draw} (QGraphics\+Scene \&scene)
+\item 
+\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_map_a72a26f8b83864199fd77abae431a3e70}{find\+City}} (const QString city\+Name) const override
+\item 
+QVector$<$ \mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_map_a40c9b543e5217d083bd094fbf76e19b7}{get\+Street\+List}} (const \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}city) const override
+\item 
+\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_map_a8342e4a44a89b2da7f7cd7c5e817723e}{get\+Opposite\+City}} (const \mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*}street, const \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}city) const override
+\item 
+double \mbox{\hyperlink{class_map_a70ad7dd376aa71119c8dc05eed75fd05}{get\+Length}} (const \mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*}street) const override
+\item 
+\Hypertarget{class_map_a93412d7c83a42283862df61c91731c48}\label{class_map_a93412d7c83a42283862df61c91731c48} 
+QVector$<$ \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries get\+Cities} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_abstract_map}{Abstract\+Map}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Abstract\+Map} ()
+\begin{DoxyCompactList}\small\item\em Virtual Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_map_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_map_ab70669beead9e729b7c5bae351b33236}\index{Map@{Map}!addCity@{addCity}}
+\index{addCity@{addCity}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{addCity()}{addCity()}}
+{\footnotesize\ttfamily \label{class_map_ab70669beead9e729b7c5bae351b33236} 
+void Map\+::add\+City (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}}]{city}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_map}{Abstract\+Map}}.
+
+\Hypertarget{class_map_a61d294ea5825c8fb5bc4096e9cec2667}\index{Map@{Map}!addStreet@{addStreet}}
+\index{addStreet@{addStreet}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{addStreet()}{addStreet()}}
+{\footnotesize\ttfamily \label{class_map_a61d294ea5825c8fb5bc4096e9cec2667} 
+bool Map\+::add\+Street (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*}}]{street}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_map}{Abstract\+Map}}.
+
+\Hypertarget{class_map_a72a26f8b83864199fd77abae431a3e70}\index{Map@{Map}!findCity@{findCity}}
+\index{findCity@{findCity}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{findCity()}{findCity()}}
+{\footnotesize\ttfamily \label{class_map_a72a26f8b83864199fd77abae431a3e70} 
+\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} Map\+::find\+City (\begin{DoxyParamCaption}\item[{const QString}]{city\+Name}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_map}{Abstract\+Map}}.
+
+\Hypertarget{class_map_a70ad7dd376aa71119c8dc05eed75fd05}\index{Map@{Map}!getLength@{getLength}}
+\index{getLength@{getLength}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily \label{class_map_a70ad7dd376aa71119c8dc05eed75fd05} 
+double Map\+::get\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*}}]{street}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_map}{Abstract\+Map}}.
+
+\Hypertarget{class_map_a8342e4a44a89b2da7f7cd7c5e817723e}\index{Map@{Map}!getOppositeCity@{getOppositeCity}}
+\index{getOppositeCity@{getOppositeCity}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getOppositeCity()}{getOppositeCity()}}
+{\footnotesize\ttfamily \label{class_map_a8342e4a44a89b2da7f7cd7c5e817723e} 
+\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} Map\+::get\+Opposite\+City (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*}}]{street}{, }\item[{const \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}}]{city}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_map}{Abstract\+Map}}.
+
+\Hypertarget{class_map_a40c9b543e5217d083bd094fbf76e19b7}\index{Map@{Map}!getStreetList@{getStreetList}}
+\index{getStreetList@{getStreetList}!Map@{Map}}
+\doxysubsubsection{\texorpdfstring{getStreetList()}{getStreetList()}}
+{\footnotesize\ttfamily \label{class_map_a40c9b543e5217d083bd094fbf76e19b7} 
+QVector$<$ \mbox{\hyperlink{class_street}{Street}} \texorpdfstring{$\ast$}{*} $>$ Map\+::get\+Street\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}}]{city}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_abstract_map}{Abstract\+Map}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+map.\+h\item 
+map.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,194 @@
+\doxysection{Student Class Reference}
+\hypertarget{class_student}{}\label{class_student}\index{Student@{Student}}
+
+
+Klasse zur Repräsentation eines Studenten.  
+
+
+
+
+{\ttfamily \#include $<$Student.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}} ()
+\begin{DoxyCompactList}\small\item\em Standardkonstruktor. Erstellt ein leeres Studenten-\/\+Objekt mit Standardwerten. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_student_a30c2079915f1de4b2f81d07ff34d32a2}{Student}} (unsigned int mat\+Nr, const std\+::string \&name, const std\+::string \&geburtstag, const std\+::string \&adresse)
+\begin{DoxyCompactList}\small\item\em Überladener Konstruktor. Erstellt ein Studenten-\/\+Objekt mit spezifischen, übergebenen Daten. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_student_a4b8bf48bc0e35673793210bd03cb4f23}{get\+Mat\+Nr}} () const
+\begin{DoxyCompactList}\small\item\em Gibt die Matrikelnummer des Studenten zurück. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gibt den Namen des Studenten zurück. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_student_a7a5a2f32e4fbc93395073157e3ae035f}{get\+Geburtstag}} () const
+\begin{DoxyCompactList}\small\item\em Gibt das Geburtsdatum des Studenten zurück. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_student_aec9e550c530f685630942bf4140bfb73}{get\+Adresse}} () const
+\begin{DoxyCompactList}\small\item\em Gibt die Adresse des Studenten zurück. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_student_a5560ff9c5da47ba8067cb37035e45e16}{ausgabe}} () const
+\begin{DoxyCompactList}\small\item\em Gibt alle Daten des Studenten formatiert auf der Konsole aus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasse zur Repräsentation eines Studenten. 
+
+Diese Klasse dient als einfacher Datencontainer und speichert die wesentlichen Informationen eines Studenten\+: Matrikelnummer, Name, Geburtstag und Adresse. 
+
+\label{doc-constructors}
+\Hypertarget{class_student_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d} 
+Student\+::\+Student (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Standardkonstruktor. Erstellt ein leeres Studenten-\/\+Objekt mit Standardwerten. 
+
+Standardkonstruktor der Klasse \doxylink{class_student}{Student}.
+
+Initialisiert ein neues Studenten-\/\+Objekt mit Standardwerten (0 für die Matrikelnummer und leere Strings für die Textfelder). Dies geschieht über eine Initialisiererliste ({\ttfamily \+:}), was die effizienteste Methode zur Initialisierung von Member-\/\+Variablen ist. \Hypertarget{class_student_a30c2079915f1de4b2f81d07ff34d32a2}\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_student_a30c2079915f1de4b2f81d07ff34d32a2} 
+Student\+::\+Student (\begin{DoxyParamCaption}\item[{unsigned int}]{m}{, }\item[{const std\+::string \&}]{n}{, }\item[{const std\+::string \&}]{g}{, }\item[{const std\+::string \&}]{a}{}\end{DoxyParamCaption})}
+
+
+
+Überladener Konstruktor. Erstellt ein Studenten-\/\+Objekt mit spezifischen, übergebenen Daten. 
+
+Überladener Konstruktor zum Erstellen eines spezifischen Studenten.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mat\+Nr} & Matrikelnummer des Studenten. \\
+\hline
+{\em name} & Vollständiger Name des Studenten. \\
+\hline
+{\em geburtstag} & Geburtsdatum des Studenten. \\
+\hline
+{\em adresse} & Adresse des Studenten.\\
+\hline
+\end{DoxyParams}
+Erstellt ein Studenten-\/\+Objekt und initialisiert es direkt mit den übergebenen Werten. Auch hier wird eine Initialisiererliste für maximale Effizienz verwendet.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Die Matrikelnummer des Studenten. \\
+\hline
+{\em n} & Der Name des Studenten. \\
+\hline
+{\em g} & Das Geburtsdatum des Studenten. \\
+\hline
+{\em a} & Die Adresse des Studenten. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_student_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_student_a5560ff9c5da47ba8067cb37035e45e16}\index{Student@{Student}!ausgabe@{ausgabe}}
+\index{ausgabe@{ausgabe}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{ausgabe()}{ausgabe()}}
+{\footnotesize\ttfamily \label{class_student_a5560ff9c5da47ba8067cb37035e45e16} 
+void Student\+::ausgabe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gibt alle Daten des Studenten formatiert auf der Konsole aus. 
+
+\begin{DoxyNote}{Note}
+Diese Funktion ist {\ttfamily const} und verändert das Objekt nicht.
+\end{DoxyNote}
+Diese Methode ist als {\ttfamily const} deklariert, da sie die Daten des Studenten nur liest und nicht verändert. Dies ist gute Praxis für alle Funktionen, die keine Schreibvorgänge auf Member-\/\+Variablen durchführen. \Hypertarget{class_student_aec9e550c530f685630942bf4140bfb73}\index{Student@{Student}!getAdresse@{getAdresse}}
+\index{getAdresse@{getAdresse}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getAdresse()}{getAdresse()}}
+{\footnotesize\ttfamily \label{class_student_aec9e550c530f685630942bf4140bfb73} 
+std\+::string Student\+::get\+Adresse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gibt die Adresse des Studenten zurück. 
+
+Gibt die Adresse zurück.
+
+\begin{DoxyReturn}{Returns}
+Die Adresse als std\+::string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Diese Funktion ist {\ttfamily const} und verändert das Objekt nicht.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Die Adresse des Studenten. 
+\end{DoxyReturn}
+\Hypertarget{class_student_a7a5a2f32e4fbc93395073157e3ae035f}\index{Student@{Student}!getGeburtstag@{getGeburtstag}}
+\index{getGeburtstag@{getGeburtstag}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getGeburtstag()}{getGeburtstag()}}
+{\footnotesize\ttfamily \label{class_student_a7a5a2f32e4fbc93395073157e3ae035f} 
+std\+::string Student\+::get\+Geburtstag (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gibt das Geburtsdatum des Studenten zurück. 
+
+Gibt das Geburtsdatum zurück.
+
+\begin{DoxyReturn}{Returns}
+Das Geburtsdatum als std\+::string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Diese Funktion ist {\ttfamily const} und verändert das Objekt nicht.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Das Geburtsdatum des Studenten. 
+\end{DoxyReturn}
+\Hypertarget{class_student_a4b8bf48bc0e35673793210bd03cb4f23}\index{Student@{Student}!getMatNr@{getMatNr}}
+\index{getMatNr@{getMatNr}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getMatNr()}{getMatNr()}}
+{\footnotesize\ttfamily \label{class_student_a4b8bf48bc0e35673793210bd03cb4f23} 
+unsigned int Student\+::get\+Mat\+Nr (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gibt die Matrikelnummer des Studenten zurück. 
+
+Gibt die Matrikelnummer zurück.
+
+\begin{DoxyReturn}{Returns}
+Die Matrikelnummer als unsigned int. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Diese Funktion ist {\ttfamily const} und verändert das Objekt nicht.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Die Matrikelnummer des Studenten. 
+\end{DoxyReturn}
+\Hypertarget{class_student_af2b671e64af8a240f59652414a8b8047}\index{Student@{Student}!getName@{getName}}
+\index{getName@{getName}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_student_af2b671e64af8a240f59652414a8b8047} 
+std\+::string Student\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gibt den Namen des Studenten zurück. 
+
+Gibt den Namen zurück.
+
+\begin{DoxyReturn}{Returns}
+Der Name als std\+::string. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Diese Funktion ist {\ttfamily const} und verändert das Objekt nicht.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Der Name des Studenten. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_student_8h}{Student.\+h}}\item 
+\mbox{\hyperlink{_student_8cpp}{Student.\+cpp}}\end{DoxyCompactItemize}

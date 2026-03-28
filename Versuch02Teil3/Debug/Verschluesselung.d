@@ -1,0 +1,1 @@
+Verschluesselung.o: ../Verschluesselung.cpp

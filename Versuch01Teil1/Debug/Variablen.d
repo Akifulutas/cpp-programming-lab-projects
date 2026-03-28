@@ -1,0 +1,1 @@
+Variablen.o: ../Variablen.cpp

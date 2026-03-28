@@ -1,0 +1,40 @@
+\doxysection{Student.\+h}
+\hypertarget{_student_8h_source}{}\label{_student_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STUDENT\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STUDENT\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}(\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ matNr,}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&name,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&geburtstag,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&adresse);}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_student_a4b8bf48bc0e35673793210bd03cb4f23}{getMatNr}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \ \mbox{\hyperlink{class_student_af2b671e64af8a240f59652414a8b8047}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ std::string\ \ \mbox{\hyperlink{class_student_a7a5a2f32e4fbc93395073157e3ae035f}{getGeburtstag}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ \ \mbox{\hyperlink{class_student_aec9e550c530f685630942bf4140bfb73}{getAdresse}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_student_a0ca4751d3971d290ed7ea54927211ebf}{ausgabe}}(std::ostream\&\ out)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_student_a44b0dc0efbc95f687706f28363e897db}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_student_a8ed21df54035f4067179661924875aac}{operator>}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_student_a8f7c31ed0e331481ac58f12b2e822047}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student_af9168cedbfa5565cf0b20c1a9d3f5c9d}{Student}}\&\ other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ matNr;}
+\DoxyCodeLine{00042\ \ \ \ \ std::string\ \ name;}
+\DoxyCodeLine{00043\ \ \ \ \ std::string\ \ geburtstag;}
+\DoxyCodeLine{00044\ \ \ \ \ std::string\ \ adresse;}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00048\ std::ostream\&\ \mbox{\hyperlink{_student_8cpp_ae6a9c8e53ca63d5c0efd1f8727c6800f}{operator<<}}(std::ostream\&\ out,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_student}{Student}}\&\ s);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STUDENT\_H\_}}
+
+\end{DoxyCode}

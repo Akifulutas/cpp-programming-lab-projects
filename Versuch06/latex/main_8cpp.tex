@@ -1,0 +1,93 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Hauptanwendung zur Verwaltung von Studierendendaten.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include "{}Student.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Einstiegspunkt der Anwendung. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hauptanwendung zur Verwaltung von Studierendendaten. 
+
+Dieses Programm ermöglicht das Hinzufügen, Löschen, Anzeigen und Speichern von Studierendendaten über ein textbasiertes Menü. Die Daten werden in einem std\+::vector$<$\+Student$>$ gespeichert.
+
+\begin{DoxyAuthor}{Author}
+akifulutas 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Einstiegspunkt der Anwendung. 
+
+Zeigt ein textbasiertes Menü an, über das Studierendendaten verwaltet werden können. Die möglichen Aktionen umfassen Einfügen, Löschen, Ausgeben und Dateizugriff.
+
+\begin{DoxyReturn}{Returns}
+int Rückgabewert des Programms (0 bei erfolgreichem Lauf). 
+\end{DoxyReturn}
+Vektor zur Speicherung aller Student-\/\+Objekte
+
+Speichert die Auswahl des Benutzers aus dem Menü
+
+Hängt einen neuen Studenten am Ende des Vektors an.
+
+Fragt Name, Geburtstag, Adresse und Matrikelnummer ab und fügt den neuen Studenten mittels emplace\+\_\+back hinzu.
+
+Fügt einen neuen Studenten am Anfang des Vektors ein.
+
+Fragt erforderliche Daten ab und verwendet insert(studenten.\+begin()).
+
+Löscht das erste Element im Vektor.
+
+Gibt zuerst den zu löschenden Studenten aus und entfernt ihn via erase(begin()). Prüft, ob der Vektor leer ist.
+
+Löscht das letzte Element im Vektor.
+
+Gibt zuerst den zu löschenden Studenten aus und entfernt ihn via pop\+\_\+back(). Prüft, ob der Vektor leer ist.
+
+Löscht einen Studenten anhand der Matrikelnummer (manuelle Suche).
+
+Sucht das erste Element mit der angegebenen Matrikelnummer mittels einer for-\/\+Schleife und löscht es.
+
+Gibt alle Studenten vorwärts aus.
+
+Durchläuft den Vektor mit einer range-\/based for-\/\+Schleife.
+
+Gibt alle Studenten rückwärts aus.
+
+Verwendet reverse\+\_\+iterator von rbegin() bis rend().
+
+Liest Studierendaten aus einer Datei ein.
+
+Dateiname wird abgefragt, vorhandene Vektordaten werden gelöscht. Jeder Datensatz wird mittels while-\/\+Schleife eingelesen. \begin{DoxyNote}{Note}
+Format\+: Matrikelnummer, Name, Geburtstag, Adresse je in einer Zeile.
+\end{DoxyNote}
+Speichert aktuelle Studierendaten in eine Datei.
+
+Dateiname wird abgefragt, jeder \doxylink{class_student}{Student} wird zeilenweise geschrieben.
+
+\texorpdfstring{$<$}{<} Beendet die Anwendung
+
+\texorpdfstring{$<$}{<} Ungültige Eingabe

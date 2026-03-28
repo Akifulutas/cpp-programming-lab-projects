@@ -1,0 +1,149 @@
+\doxysection{DVD Class Reference}
+\hypertarget{class_d_v_d}{}\label{class_d_v_d}\index{DVD@{DVD}}
+
+
+Die Klasse \doxylink{class_d_v_d}{DVD} ist eine konkrete Ableitung von \doxylink{class_medium}{Medium}.  
+
+
+
+
+{\ttfamily \#include $<$DVD.\+h$>$}
+
+Inheritance diagram for DVD\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_v_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d_v_d_aa97609c2c72c1206ba9c2ea868b97a2e}{DVD}} (std\+::string init\+Titel, int init\+Altersfreigabe, std\+::string init\+Genre)
+\begin{DoxyCompactList}\small\item\em Konstruktor für eine \doxylink{class_d_v_d}{DVD}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_d_v_d_a8c4e6387415bd7a0ba96d75bc32d9abd}{ausgabe}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Überschreibt die Ausgabefunktion der Basisklasse. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_d_v_d_a70c30e0b6b96df84fdaae5a8cb069ef4}{ausleihen}} (\mbox{\hyperlink{class_person}{Person}} person, \mbox{\hyperlink{class_datum}{Datum}} ausleihdatum) override
+\begin{DoxyCompactList}\small\item\em Überschreibt die Ausleihfunktion der Basisklasse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_medium}{Medium}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_medium_aa8bd867d2e3644022a117433e3321f18}{Medium}} (std\+::string init\+Titel)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Medium} (void)
+\begin{DoxyCompactList}\small\item\em virtueller Destruktor (Aufgabe 8.\+7.\+3) Wichtig, damit beim Löschen eines Objekts über einen Basisklassen-\/\+Zeiger der korrekte Destruktor der abgeleiteten Klasse aufgerufen wird. \end{DoxyCompactList}\item 
+void {\bfseries zurueckgeben} ()
+\begin{DoxyCompactList}\small\item\em Gibt ein \doxylink{class_medium}{Medium} in die Bücherei zurück. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_medium_a1f1d72c8943b973ab024014f0fcc306f}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em ID des Mediums. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_medium_a5ebfbc460958b938a04f15b3cf68f6bc}{get\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Status des Mediums (Aufgabe 8.\+7.\+4) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_medium}{Medium}}}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries ID}
+\begin{DoxyCompactList}\small\item\em Eindeutige ID des Mediums. \end{DoxyCompactList}\item 
+std\+::string {\bfseries titel}
+\begin{DoxyCompactList}\small\item\em Titel des Mediums. \end{DoxyCompactList}\item 
+bool {\bfseries status}
+\begin{DoxyCompactList}\small\item\em Status des Mediums (true\+: ausgeliehen, false\+: nicht ausgeliehen) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_datum}{Datum}} {\bfseries datum\+Ausgeliehen}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_datum}{Datum} seit dem das \doxylink{class_medium}{Medium} ausgeliehen ist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_person}{Person}} {\bfseries person\+Ausgeliehen}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_person}{Person}, die das \doxylink{class_medium}{Medium} ausgeliehen hat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_medium}{Medium}}}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int {\bfseries current\+ID} = 1
+\begin{DoxyCompactList}\small\item\em Statische Variable zum Erzeugen der fortlaufenden IDs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Die Klasse \doxylink{class_d_v_d}{DVD} ist eine konkrete Ableitung von \doxylink{class_medium}{Medium}. 
+
+Repräsentiert eine \doxylink{class_d_v_d}{DVD} mit Titel, Altersfreigabe (FSK) und Genre. Besitzt eine eigene Ausleihlogik basierend auf der Altersfreigabe. 
+
+\label{doc-constructors}
+\Hypertarget{class_d_v_d_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_d_v_d_aa97609c2c72c1206ba9c2ea868b97a2e}\index{DVD@{DVD}!DVD@{DVD}}
+\index{DVD@{DVD}!DVD@{DVD}}
+\doxysubsubsection{\texorpdfstring{DVD()}{DVD()}}
+{\footnotesize\ttfamily \label{class_d_v_d_aa97609c2c72c1206ba9c2ea868b97a2e} 
+DVD\+::\+DVD (\begin{DoxyParamCaption}\item[{std\+::string}]{init\+Titel}{, }\item[{int}]{init\+Altersfreigabe}{, }\item[{std\+::string}]{init\+Genre}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor für eine \doxylink{class_d_v_d}{DVD}. 
+
+Konstruktor-\/\+Implementierung für \doxylink{class_d_v_d}{DVD}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+Titel} & Der Titel der \doxylink{class_d_v_d}{DVD} \\
+\hline
+{\em init\+Altersfreigabe} & Die Altersfreigabe (z.\+B. 0, 6, 12, 16, 18) \\
+\hline
+{\em init\+Genre} & Das Genre der \doxylink{class_d_v_d}{DVD} (z.\+B. Action, Komödie) \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_d_v_d_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_d_v_d_a8c4e6387415bd7a0ba96d75bc32d9abd}\index{DVD@{DVD}!ausgabe@{ausgabe}}
+\index{ausgabe@{ausgabe}!DVD@{DVD}}
+\doxysubsubsection{\texorpdfstring{ausgabe()}{ausgabe()}}
+{\footnotesize\ttfamily \label{class_d_v_d_a8c4e6387415bd7a0ba96d75bc32d9abd} 
+void DVD\+::ausgabe (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Überschreibt die Ausgabefunktion der Basisklasse. 
+
+Implementierung der überschriebenen {\ttfamily ausgabe}-\/Funktion für \doxylink{class_d_v_d}{DVD}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Der Ausgabestrom \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_medium_a3f9379ad4ef74ba58d25de30a62d21de}{Medium}}.
+
+\Hypertarget{class_d_v_d_a70c30e0b6b96df84fdaae5a8cb069ef4}\index{DVD@{DVD}!ausleihen@{ausleihen}}
+\index{ausleihen@{ausleihen}!DVD@{DVD}}
+\doxysubsubsection{\texorpdfstring{ausleihen()}{ausleihen()}}
+{\footnotesize\ttfamily \label{class_d_v_d_a70c30e0b6b96df84fdaae5a8cb069ef4} 
+bool DVD\+::ausleihen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_person}{Person}}}]{person}{, }\item[{\mbox{\hyperlink{class_datum}{Datum}}}]{ausleihdatum}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Überschreibt die Ausleihfunktion der Basisklasse. 
+
+Implementierung der überschriebenen {\ttfamily ausleihen}-\/Funktion mit Altersprüfung.
+
+Implementiert die Prüfung der Altersfreigabe der ausleihenden \doxylink{class_person}{Person}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em person} & Die \doxylink{class_person}{Person}, die ausleihen möchte \\
+\hline
+{\em ausleihdatum} & Das aktuelle \doxylink{class_datum}{Datum} der Ausleihe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true, wenn die Ausleihe erfolgreich war, sonst false 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_medium_a98261c5da2a63906799f298cbbcd66b8}{Medium}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_d_v_d_8h}{DVD.\+h}}\item 
+\mbox{\hyperlink{_d_v_d_8cpp}{DVD.\+cpp}}\end{DoxyCompactItemize}

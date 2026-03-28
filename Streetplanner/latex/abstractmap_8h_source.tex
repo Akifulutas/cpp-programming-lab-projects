@@ -1,0 +1,45 @@
+\doxysection{abstractmap.\+h}
+\hypertarget{abstractmap_8h_source}{}\label{abstractmap_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Praktikum\ Informatik\ 1\ MMXXV}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Versuch\ 9}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ ABSTRACTMAP}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ ABSTRACTMAP}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ \ Aendern\ Sie\ an\ dieser\ Datei\ nichts!}}
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ \ Entfernen\ Sie\ lediglich\ den\ Kommentar\ vor\ den\ Funktionen,}}
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ \ nachdem\ Sie\ diese\ in\ der\ Klasse\ Map\ implementiert\ haben.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ \ Die\ Schnittstellen\ (Signaturen)\ der\ Funktionen}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ \ werden\ genau\ so\ gebraucht.}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}city.h"{}}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//\#include\ "{}street.h"{}}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_street}{Street}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_abstract_map}{AbstractMap}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_abstract_map_ab2fbb46108e2905fb1193a67510d41f0}{\string~AbstractMap}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ addCity(\mbox{\hyperlink{class_city}{City}}*)\ =\ 0;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ addStreet(\mbox{\hyperlink{class_street}{Street}}*)\ =\ 0;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_city}{City}}*\ findCity(\textcolor{keyword}{const}\ QString\ cityName)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ QVector<Street*>\ getStreetList(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_city}{City}}*\ city)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_city}{City}}*\ getOppositeCity(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_street}{Street}}*\ street,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_city}{City}}*\ city)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ getLength(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_street}{Street}}*\ street)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ABSTRACTMAP}}
+
+\end{DoxyCode}

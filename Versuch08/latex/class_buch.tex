@@ -1,0 +1,121 @@
+\doxysection{Buch Class Reference}
+\hypertarget{class_buch}{}\label{class_buch}\index{Buch@{Buch}}
+
+
+Die Klasse \doxylink{class_buch}{Buch} ist eine konkrete Ableitung der abstrakten Klasse \doxylink{class_medium}{Medium}.  
+
+
+
+
+{\ttfamily \#include $<$Buch.\+h$>$}
+
+Inheritance diagram for Buch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_buch}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_buch_aabc82930f1e38ca1bf4be15cb5681d81}{Buch}} (std\+::string init\+Titel, std\+::string init\+Autor)
+\begin{DoxyCompactList}\small\item\em Konstruktor für ein \doxylink{class_buch}{Buch}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_buch_ae4599c9144eff315a326309542ede55e}{ausgabe}} (std\+::ostream \&out) const override
+\begin{DoxyCompactList}\small\item\em Überschreibt die rein virtuelle Ausgabefunktion der Basisklasse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_medium}{Medium}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_medium_aa8bd867d2e3644022a117433e3321f18}{Medium}} (std\+::string init\+Titel)
+\begin{DoxyCompactList}\small\item\em Konstruktor. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Medium} (void)
+\begin{DoxyCompactList}\small\item\em virtueller Destruktor (Aufgabe 8.\+7.\+3) Wichtig, damit beim Löschen eines Objekts über einen Basisklassen-\/\+Zeiger der korrekte Destruktor der abgeleiteten Klasse aufgerufen wird. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_medium_a98261c5da2a63906799f298cbbcd66b8}{ausleihen}} (\mbox{\hyperlink{class_person}{Person}} person, \mbox{\hyperlink{class_datum}{Datum}} ausleihdatum)
+\begin{DoxyCompactList}\small\item\em Virtuelle Ausleihen-\/\+Funktion (Aufgabe 8.\+7.\+2) \end{DoxyCompactList}\item 
+void {\bfseries zurueckgeben} ()
+\begin{DoxyCompactList}\small\item\em Gibt ein \doxylink{class_medium}{Medium} in die Bücherei zurück. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_medium_a1f1d72c8943b973ab024014f0fcc306f}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em ID des Mediums. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_medium_a5ebfbc460958b938a04f15b3cf68f6bc}{get\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Status des Mediums (Aufgabe 8.\+7.\+4) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_medium}{Medium}}}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int {\bfseries ID}
+\begin{DoxyCompactList}\small\item\em Eindeutige ID des Mediums. \end{DoxyCompactList}\item 
+std\+::string {\bfseries titel}
+\begin{DoxyCompactList}\small\item\em Titel des Mediums. \end{DoxyCompactList}\item 
+bool {\bfseries status}
+\begin{DoxyCompactList}\small\item\em Status des Mediums (true\+: ausgeliehen, false\+: nicht ausgeliehen) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_datum}{Datum}} {\bfseries datum\+Ausgeliehen}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_datum}{Datum} seit dem das \doxylink{class_medium}{Medium} ausgeliehen ist. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_person}{Person}} {\bfseries person\+Ausgeliehen}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_person}{Person}, die das \doxylink{class_medium}{Medium} ausgeliehen hat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_medium}{Medium}}}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int {\bfseries current\+ID} = 1
+\begin{DoxyCompactList}\small\item\em Statische Variable zum Erzeugen der fortlaufenden IDs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Die Klasse \doxylink{class_buch}{Buch} ist eine konkrete Ableitung der abstrakten Klasse \doxylink{class_medium}{Medium}. 
+
+Sie repräsentiert ein \doxylink{class_buch}{Buch} mit einem Titel und einem Autor. 
+
+\label{doc-constructors}
+\Hypertarget{class_buch_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_buch_aabc82930f1e38ca1bf4be15cb5681d81}\index{Buch@{Buch}!Buch@{Buch}}
+\index{Buch@{Buch}!Buch@{Buch}}
+\doxysubsubsection{\texorpdfstring{Buch()}{Buch()}}
+{\footnotesize\ttfamily \label{class_buch_aabc82930f1e38ca1bf4be15cb5681d81} 
+Buch\+::\+Buch (\begin{DoxyParamCaption}\item[{std\+::string}]{init\+Titel}{, }\item[{std\+::string}]{init\+Autor}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor für ein \doxylink{class_buch}{Buch}. 
+
+Konstruktor-\/\+Implementierung für \doxylink{class_buch}{Buch}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em init\+Titel} & Der Titel des Buches \\
+\hline
+{\em init\+Autor} & Der Autor des Buches\\
+\hline
+\end{DoxyParams}
+Wichtig ist hier die Initialisierungsliste (nach dem Doppelpunkt). Zuerst wird der Konstruktor der Basisklasse {\ttfamily \doxylink{class_medium}{Medium}} mit dem Titel aufgerufen. Danach wird das eigene Attribut {\ttfamily autor} der Klasse {\ttfamily \doxylink{class_buch}{Buch}} initialisiert. 
+
+\label{doc-func-members}
+\Hypertarget{class_buch_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_buch_ae4599c9144eff315a326309542ede55e}\index{Buch@{Buch}!ausgabe@{ausgabe}}
+\index{ausgabe@{ausgabe}!Buch@{Buch}}
+\doxysubsubsection{\texorpdfstring{ausgabe()}{ausgabe()}}
+{\footnotesize\ttfamily \label{class_buch_ae4599c9144eff315a326309542ede55e} 
+void Buch\+::ausgabe (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Überschreibt die rein virtuelle Ausgabefunktion der Basisklasse. 
+
+Implementierung der überschriebenen {\ttfamily ausgabe}-\/Funktion für \doxylink{class_buch}{Buch}.
+
+Gibt alle Informationen des Buches (inkl. der geerbten von \doxylink{class_medium}{Medium}) in den übergebenen Ausgabestrom aus. Das Schlüsselwort \textquotesingle{}override\textquotesingle{} stellt sicher, dass wir tatsächlich eine virtuelle Funktion der Basisklasse überschreiben, was die Fehleranfälligkeit reduziert.
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & Der Ausgabestrom (z.\+B. std\+::cout) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_medium_a3f9379ad4ef74ba58d25de30a62d21de}{Medium}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_buch_8h}{Buch.\+h}}\item 
+\mbox{\hyperlink{_buch_8cpp}{Buch.\+cpp}}\end{DoxyCompactItemize}

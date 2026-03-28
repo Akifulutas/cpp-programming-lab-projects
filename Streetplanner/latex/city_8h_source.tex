@@ -1,0 +1,41 @@
+\doxysection{city.\+h}
+\hypertarget{city_8h_source}{}\label{city_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Praktikum\ Informatik\ 1\ MMXXV}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Versuch\ 9}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ CITY\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ CITY\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Benötigte\ Qt-\/Header\ für\ den\ Namen\ (QString)\ und\ zum\ Zeichnen\ (QGraphics...\ Klassen).}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QGraphicsScene>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QGraphicsTextItem>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QPen>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QBrush>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_city_a9e29f32d33f56bdf59cba425a7e08bd8}{City}}}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Konstruktor:\ Erstellt\ ein\ neues\ City-\/Objekt\ mit\ den\ übergebenen\ Werten.}}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_city_a9e29f32d33f56bdf59cba425a7e08bd8}{City}}(QString\ name,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Zeichnet\ die\ Stadt\ (als\ Punkt\ und\ Text)\ in\ die\ angegebene\ Grafiszene.}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_city_a3d22cac343c40bf53d6bc8d831ac4262}{draw}}(QGraphicsScene\&\ scene);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ Getter-\/Funktionen\ -\/-\/-\/}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Geben\ die\ privaten\ Daten\ der\ Stadt\ zurück.\ "{}const"{}\ versichert,\ dass\ sie\ nichts\ ändern.}}
+\DoxyCodeLine{00031\ \ \ \ \ QString\ getName()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ getX()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ getY()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Private\ Member-\/Variablen\ zur\ Speicherung\ der\ Stadtdaten.}}
+\DoxyCodeLine{00037\ \ \ \ \ QString\ name;\ \textcolor{comment}{//\ Name\ der\ Stadt.}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ x;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ x-\/Koordinate\ für\ die\ grafische\ Darstellung.}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ y;\ \ \ \ \ \ \ \ \textcolor{comment}{//\ y-\/Koordinate\ für\ die\ grafische\ Darstellung.}}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CITY\_H}}
+
+\end{DoxyCode}

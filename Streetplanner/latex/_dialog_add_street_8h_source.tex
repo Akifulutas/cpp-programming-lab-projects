@@ -1,0 +1,41 @@
+\doxysection{Dialog\+Add\+Street.\+h}
+\hypertarget{_dialog_add_street_8h_source}{}\label{_dialog_add_street_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Praktikum\ Informatik\ 1\ MMXXV}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Versuch\ 9}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ DIALOGADDSTREET\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ DIALOGADDSTREET\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}map.h"{}}\ \textcolor{comment}{//\ Wichtig:\ Nötig,\ um\ auf\ die\ Liste\ der\ existierenden\ Städte\ zugreifen\ zu\ können.}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ Standard\ Qt-\/Code\ für\ die\ .ui-\/Datei\ Anbindung.}}
+\DoxyCodeLine{00012\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }Ui\ \{\ \textcolor{keyword}{class\ }DialogAddStreet;\ \}}
+\DoxyCodeLine{00014\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dialog_add_street_aa974306ea77502ed7f3a1a3ccf8038a0}{DialogAddStreet}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ Q\_OBJECT\ \textcolor{comment}{//\ Notwendig\ für\ Qt's\ Signal\ \&\ Slot\ Funktionalität.}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_dialog_add_street_aa974306ea77502ed7f3a1a3ccf8038a0}{DialogAddStreet}}(\mbox{\hyperlink{class_map}{Map}}\&\ map,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Destruktor:\ Räumt\ die\ UI-\/Ressourcen\ auf.}}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_dialog_add_street_a4e6aa7662f44e9003ef241d14c173269}{\string~DialogAddStreet}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ -\/-\/-\/\ Getter-\/Funktionen\ -\/-\/-\/}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ Geben\ die\ Namen\ der\ zwei\ vom\ Benutzer\ ausgewählten\ Städte\ zurück.}}
+\DoxyCodeLine{00038\ \ \ \ \ QString\ getCity1Name()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ QString\ getCity2Name()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ Zeiger\ auf\ die\ UI-\/Klasse,\ die\ Zugriff\ auf\ die\ Elemente\ der\ .ui-\/Datei\ bietet,}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ insbesondere\ auf\ die\ beiden\ ComboBoxen\ für\ die\ Stadtauswahl.}}
+\DoxyCodeLine{00044\ \ \ \ \ Ui::DialogAddStreet\ *ui;}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DIALOGADDSTREET\_H}}
+
+\end{DoxyCode}

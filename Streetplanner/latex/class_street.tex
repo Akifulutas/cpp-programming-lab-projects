@@ -1,0 +1,94 @@
+\doxysection{Street Class Reference}
+\hypertarget{class_street}{}\label{class_street}\index{Street@{Street}}
+
+
+Repräsentiert eine Straße als direkte Verbindung zwischen zwei Städten.  
+
+
+
+
+{\ttfamily \#include $<$street.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_street_a6b46b32e856030ff31d09ff0011e25e4}{Street}} (\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}city1, \mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}city2)
+\begin{DoxyCompactList}\small\item\em Konstruktor, der Zeiger auf die beiden zu verbindenden Städte erhält. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_street_a8a445d11dfb869969bea3b8f6e4a2edf}{draw}} (QGraphics\+Scene \&scene)
+\begin{DoxyCompactList}\small\item\em Zeichnet die Straße als normale gelbe Linie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_street_a64316b1ab76eb572376f47fdb3f8fcc8}{draw\+Red}} (QGraphics\+Scene \&scene)
+\begin{DoxyCompactList}\small\item\em Zeichnet die Straße als dicke, rote Linie. Nützlich, um einen Pfad (z.\+B. den Dijkstra-\/\+Weg) hervorzuheben. \end{DoxyCompactList}\item 
+\Hypertarget{class_street_ab8d3699fb6ea3a4da8b1ca9b6b440db8}\label{class_street_ab8d3699fb6ea3a4da8b1ca9b6b440db8} 
+\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} {\bfseries get\+City1} () const
+\item 
+\Hypertarget{class_street_af0c8600437fb78a5def8793544970c8c}\label{class_street_af0c8600437fb78a5def8793544970c8c} 
+\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*} {\bfseries get\+City2} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Repräsentiert eine Straße als direkte Verbindung zwischen zwei Städten. 
+
+\label{doc-constructors}
+\Hypertarget{class_street_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_street_a6b46b32e856030ff31d09ff0011e25e4}\index{Street@{Street}!Street@{Street}}
+\index{Street@{Street}!Street@{Street}}
+\doxysubsubsection{\texorpdfstring{Street()}{Street()}}
+{\footnotesize\ttfamily \label{class_street_a6b46b32e856030ff31d09ff0011e25e4} 
+Street\+::\+Street (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}}]{city1}{, }\item[{\mbox{\hyperlink{class_city}{City}} \texorpdfstring{$\ast$}{*}}]{city2}{}\end{DoxyParamCaption})}
+
+
+
+Konstruktor, der Zeiger auf die beiden zu verbindenden Städte erhält. 
+
+Konstruktor der Street-\/\+Klasse. Speichert die Zeiger auf die beiden City-\/\+Objekte, die verbunden werden sollen. Nutzt eine Initialisierungsliste für eine effiziente Zuweisung.
+
+
+\begin{DoxyParams}{Parameters}
+{\em city1} & Zeiger auf die erste Stadt. \\
+\hline
+{\em city2} & Zeiger auf die zweite Stadt. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_street_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_street_a8a445d11dfb869969bea3b8f6e4a2edf}\index{Street@{Street}!draw@{draw}}
+\index{draw@{draw}!Street@{Street}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_street_a8a445d11dfb869969bea3b8f6e4a2edf} 
+void Street\+::draw (\begin{DoxyParamCaption}\item[{QGraphics\+Scene \&}]{scene}{}\end{DoxyParamCaption})}
+
+
+
+Zeichnet die Straße als normale gelbe Linie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & Die Zeichenfläche, auf der die Linie erscheinen soll. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_street_a64316b1ab76eb572376f47fdb3f8fcc8}\index{Street@{Street}!drawRed@{drawRed}}
+\index{drawRed@{drawRed}!Street@{Street}}
+\doxysubsubsection{\texorpdfstring{drawRed()}{drawRed()}}
+{\footnotesize\ttfamily \label{class_street_a64316b1ab76eb572376f47fdb3f8fcc8} 
+void Street\+::draw\+Red (\begin{DoxyParamCaption}\item[{QGraphics\+Scene \&}]{scene}{}\end{DoxyParamCaption})}
+
+
+
+Zeichnet die Straße als dicke, rote Linie. Nützlich, um einen Pfad (z.\+B. den Dijkstra-\/\+Weg) hervorzuheben. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & Die Zeichenfläche, auf der die Linie erscheinen soll. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+street.\+h\item 
+street.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,1 @@
+Strukturen.o: ../Strukturen.cpp

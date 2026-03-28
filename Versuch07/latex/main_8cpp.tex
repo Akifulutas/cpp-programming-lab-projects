@@ -1,0 +1,125 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Hauptanwendung zur Verwaltung von Studierendendaten.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include "{}Student.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Hauptfunktion des Programms (Einstiegspunkt). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hauptanwendung zur Verwaltung von Studierendendaten. 
+
+Diese Anwendung ermöglicht das Hinzufügen, Löschen, Anzeigen, Speichern und Laden von Studentendatensätzen in einem Vektor.
+
+\begin{DoxyAuthor}{Author}
+akifulutas 
+\end{DoxyAuthor}
+
+
+\label{doc-func-members}
+\Hypertarget{main_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Hauptfunktion des Programms (Einstiegspunkt). 
+
+Steuert den Hauptablauf des Programms\+: Menü anzeigen, Benutzereingaben verarbeiten und die entsprechenden Aktionen zur Studentenverwaltung ausführen. \begin{DoxyReturn}{Returns}
+int Gibt 0 zurück, wenn das Programm erfolgreich beendet wurde. 
+\end{DoxyReturn}
+Haupt-\/\+Datenstruktur zur Speicherung der Studenten. Ein Vektor wird verwendet, da er ein dynamisches Array ist, das einfach wachsen und schrumpfen kann.
+
+Variable zur Speicherung der Menüauswahl des Benutzers.
+
+Die Hauptschleife des Programms. Sie läuft so lange, bis der Benutzer \textquotesingle{}0\textquotesingle{} wählt.
+
+Gibt das Hauptmenü auf der Konsole aus, damit der Benutzer eine Aktion auswählen kann.
+
+Lese die Auswahl des Benutzers ein (ein einzelnes Zeichen).
+
+WICHTIG\+: Leert den Eingabepuffer. Nach der Eingabe von \textquotesingle{}auswahl\textquotesingle{} und dem Drücken von Enter verbleibt das Zeilenumbruchzeichen (\textquotesingle{}~\newline
+\textquotesingle{}) im Puffer. Ohne \textquotesingle{}ignore\textquotesingle{} würde das nächste \textquotesingle{}std\+::getline\textquotesingle{} dieses Zeichen sofort einlesen und eine leere Zeile zurückgeben.
+
+Verzweigt das Programm basierend auf der Benutzereingabe.
+
+Block zum Anlegen und Anhängen eines neuen Studenten am Ende.
+
+Fügt einen neuen Studenten am Ende des Vektors hinzu. \textquotesingle{}emplace\+\_\+back\textquotesingle{} ist oft effizienter als \textquotesingle{}push\+\_\+back\textquotesingle{}, da es das Objekt direkt im Vektor konstruiert und so eine zusätzliche Kopie vermeidet.
+
+Block zum Anlegen und Einfügen eines neuen Studenten am Anfang.
+
+Fügt einen neuen Studenten am Anfang des Vektors ein. \textquotesingle{}studenten.\+begin()\textquotesingle{} ist ein Iterator, der auf die erste Position zeigt.
+
+Sicherheitsüberprüfung\+: Löschen ist nur möglich, wenn der Vektor nicht leer ist.
+
+Gibt den ersten Studenten aus. \textquotesingle{}front()\textquotesingle{} gibt eine Referenz auf das erste Element zurück.
+
+Löscht das erste Element im Vektor. \textquotesingle{}erase\textquotesingle{} benötigt einen Iterator auf das zu löschende Element.
+
+Überprüfung, ob der Vektor Elemente enthält.
+
+Gibt den letzten Studenten aus. \textquotesingle{}back()\textquotesingle{} gibt eine Referenz auf das letzte Element zurück.
+
+Entfernt das letzte Element aus dem Vektor. Dies ist eine sehr effiziente Operation.
+
+Wenn der Vektor leer ist, kann nichts gelöscht werden.
+
+Erstellt ein temporäres Student-\/\+Objekt nur für die Suche. Nur die Matrikelnummer ist hier relevant, da der \textquotesingle{}operator==\textquotesingle{} (in \doxylink{_student_8cpp}{Student.\+cpp} definiert) nur diese vergleicht.
+
+Verwendet den \textquotesingle{}std\+::find\textquotesingle{}-\/Algorithmus aus $<$algorithm$>$, um den Studenten zu suchen. \textquotesingle{}std\+::find\textquotesingle{} nutzt intern den überladenen \textquotesingle{}operator==\textquotesingle{} der Student-\/\+Klasse. \textquotesingle{}it\textquotesingle{} ist ein Iterator, der auf das gefundene Element zeigt.
+
+Überprüft, ob der \textquotesingle{}find\textquotesingle{}-\/Algorithmus erfolgreich war. Wenn \textquotesingle{}it\textquotesingle{} ungleich \textquotesingle{}studenten.\+end()\textquotesingle{} ist, wurde der \doxylink{class_student}{Student} gefunden.
+
+Löscht den Studenten an der Position, auf die der Iterator \textquotesingle{}it\textquotesingle{} zeigt.
+
+Gibt alle Studenten in der normalen Reihenfolge (von vorne nach hinten) aus.
+
+Die Range-\/based for-\/\+Schleife ist die modernste und sicherste Methode, um über alle Elemente eines Containers zu iterieren.
+
+Gibt alle Studenten in umgekehrter Reihenfolge aus.
+
+Dafür werden Reverse-\/\+Iteratoren verwendet. \textquotesingle{}rbegin()\textquotesingle{} zeigt auf das letzte Element, \textquotesingle{}rend()\textquotesingle{} auf die Position {\itshape vor} dem ersten Element.
+
+Block zum Einlesen von Studentendaten aus einer Datei.
+
+Öffnet eine Datei zum Lesen (Input File Stream).
+
+Wichtige Fehlerbehandlung\+: Überprüft, ob die Datei erfolgreich geöffnet werden konnte.
+
+Leert den Vektor, um Platz für die neuen Daten aus der Datei zu machen.
+
+Schleife zum Einlesen der Datensätze. Die Bedingung \textquotesingle{}eingabe \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} m\textquotesingle{} liest die Matrikelnummer und prüft gleichzeitig, ob das Lesen erfolgreich war (und das Dateiende nicht erreicht ist).
+
+Block zum Sichern der aktuellen Studentendaten in eine Datei.
+
+Öffnet eine Datei zum Schreiben (Output File Stream).
+
+Iteriert durch alle Studenten im Vektor und schreibt deren Daten zeilenweise in die Datei.
+
+Block zum Sortieren des Vektors.
+
+Verwendet den \textquotesingle{}std\+::sort\textquotesingle{}-\/Algorithmus. Standardmäßig benutzt \textquotesingle{}std\+::sort\textquotesingle{} den überladenen \textquotesingle{}operator\texorpdfstring{$<$}{<}\textquotesingle{} der Student-\/\+Klasse für die Vergleiche.
+
+Beendet die do-\/while-\/\+Schleife und damit das Programm.
+
+Fallback für ungültige Menüoptionen.
+
+Standard-\/\+Rückgabewert für eine erfolgreiche Ausführung.
